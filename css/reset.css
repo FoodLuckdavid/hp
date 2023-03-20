@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+
+html,body,div,dl,dt,dd,ul,ol,li,
+h1,h2,h3,h4,h5,h6,pre,form,
+fieldset,input,textarea,
+p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+} 
+
+html {
+	height:  auto;/* 100%にすると不具合あり */
+	/* font-size:10px; */ /* basic font-size of this web site */
+	font-size: 62.5%; /* 10(base font size) / 16(Browser Default font size) 1rem=10px */
+}
+body {
+	height:  auto;/* 100%にすると不具合あり */
+	/* ↓必須 */
+	-webkit-text-size-adjust: 100%;/* 文字サイズ用 */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	/* ↑必須 */	
+}
+
+header, footer, nav, section, article, figure, aside {
+	display:block;
+}
+
+address,caption,cite,code,dfn,em,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ ol,ul {
+	list-style-type:none;
+}
+caption,th {
+	text-align:left;
+}
+
+table {
+	/* border-collapse:collapse; これがあるとpaddingが効かなくなる */
+	border-spacing:0;
+}
+img {
+	vertical-align:bottom;
+	border: none;
+}
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------
+	 frequant classes
+------------------------------------------------------------------------------- */
+.hidden {
+	visibility: hidden;	
+}
+.hide {
+	display: none;
+}
+
+/* clearfix */
+.clearfix:after {
+  content: ".";  /* 新しい要素を作る */
+  display: block;  /* ブロックレベル要素に */
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.clearfix {
+  min-height: 1px; /* IE7用 */
+}
+/* IE6用 
+* html .clearfix {
+  height: 1px; 
+} */
+
+
+/* クリックを無効に。カーソルはそのまま */
+.no-action {
+	pointer-events: none;
+}
+
+
+
+/* //////////////////////////////  FOR THIS WEB SITE  //////////////////////////////// */
+
+
+/* text type */
+h1,h2,h3,h4,h5,h6 {
+	font-size: 20px;
+	font-size:2rem;
+	font-weight:bold;
+	line-height: 1.4;
+	font-family:"メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+dt,dd,li,
+fieldset,input,textarea,
+p,blockquote,th,td,
+a, span { 
+	font-size: 13px;
+	font-size: 1.3rem;
+	line-height: 1.8;
+	font-family:"メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-weight: normal;
+}
+
+.note {
+	font-size: 10px;
+	font-size: 1rem;
+	line-height: 1.6;
+	color: #666;
+}
+.caution {
+	color: #f00;	
+}
+
+
+
+
+/* table  ---------  1pxの罫、文字は左上よせ------- */
+table {
+	width: 100%;
+	border: 1px solid #999;
+	border-right: none;
+	border-bottom: none;	
+	box-sizing: border-box;
+}
+table th,
+table td {
+	border: 1px solid #999;
+	border-left: none;
+	border-top: none;
+	font-size: 14px;
+	font-size: 1.4rem;
+	text-align: left;
+	vertical-align: top;
+	padding: 0.3em 0.4px;
+	line-height: 1.4;
+	font-weight: normal;
+	box-sizing: border-box;
+}
+.tbl_cap {
+	text-align: left;
+	font-weight: bold;
+	padding-bottom: 5px;
+	letter-spacing: 0.05em;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------
+	 About Links
+------------------------------------------------------------------------------- */
+
+a {
+	text-decoration: none;
+	color: #339900;
+}
+
+/* hover */
+/* a:hover img {
+	filter: alpha(opacity=80) ;
+	-moz-opacity: 0.80;
+	opacity: 0.80;
+}*/
+a:hover {
+	filter: alpha(opacity=70);
+	-moz-opacity: 0.70;
+	opacity: 0.70;
+} 
+
+/* hr */
+
+hr {
+		height: 0;
+		margin: 0;
+		padding: 0;
+		border: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

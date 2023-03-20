@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+
+@import url("reset.css");
+@import url("common.css");
+
+
+
+#header_img {
+	background: #f3f3f3 url(../images/img_header.png) no-repeat center top;
+	background-size: auto 100%;
+}
+
+
+.chapter_ttl.site_message .txt {	
+	margin-bottom: 8px;
+	margin-left: -15px;
+	font-family: "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "MS Ｐ明朝", "MS PMincho", serif;
+	font-size: 43px;
+	letter-spacing: 0em;
+	font-weight: normal;
+	/* text-align: justify; */
+	background: none;
+	border: none;
+	line-height: 1.4;
+}
+@media (max-width: 499px){
+	.chapter_ttl.site_message .txt {	
+	margin-bottom: 8px;
+	margin-left: 0px;
+	font-family: "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "MS Ｐ明朝", "MS PMincho", serif;
+	font-size: 30px;
+	line-height: 1.4;
+	}
+}
+
+.chapter_ttl.site_message + .lead {
+	float: left;
+	margin-left: 2%;
+	width: 67%;
+}
+@media (max-width: 499px){
+	.chapter_ttl.site_message + .lead {
+	margin-left: 2%;
+	width: 96%;
+	}
+}
+.message_img {
+	position: relative;
+	display: inline-block;
+	float: right;
+	top: 0px;
+	margin-bottom: -10px;
+	padding-right: 3.5%;
+}
+@media (max-width: 768px) and (min-width: 500px) {
+	.message_img img {
+	width: 25vw;
+	height: auto;
+	}
+}
+@media (max-width: 499px){
+	.message_img {
+	position: relative;
+	display: inline-block;
+	float: none;
+	top: 0px;
+	margin-bottom: -10px;
+	padding-right: 0;
+	width: 100%;
+	text-align: center;
+	}
+}
+
+
+
+#news_oshirase + .par {
+	padding: 1px 5px;
+	border-top: 1px solid #ccc;
+	font-size: 11px;
+	font-size: 1.1rem;
+	text-align: right;
+}
+
+
+@media (max-width: 499px){
+#news_oshirase + .par {
+	line-height: 1.2;
+	text-align: left;
+}
+}
